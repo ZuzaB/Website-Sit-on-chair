@@ -50,6 +50,7 @@ body{
     margin: 0px auto;
     max-width: 1064px;
     border: 1px solid red;
+    padding: 
 }
 
 .row:after{
@@ -113,31 +114,47 @@ span{
     color: #25b9a3;
 }
 
-#top{
-    background: #e3e3e3;
-    background: -moz-linear-gradient(top, hsl(0,0%,89%) 0%, hsl(0,0%,89%) 48%, hsl(248,9%,82%) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, hsl(0,0%,89%)), color-stop(48%, hsl(0,0%,89%)), color-stop(100%, hsl(248,9%,82%)));
-    background: -webkit-linear-gradient(top, hsl(0,0%,89%) 0%, hsl(0,0%,89%) 48%, hsl(248,9%,82%) 100%);
-    background: -o-linear-gradient(top, hsl(0,0%,89%) 0%, hsl(0,0%,89%) 48%, hsl(248,9%,82%) 100%);
-    background: -ms-linear-gradient(top, hsl(0,0%,89%) 0%, hsl(0,0%,89%) 48%, hsl(248,9%,82%) 100%);
-    background: linear-gradient(to bottom, hsl(0,0%,89%) 0%, hsl(0,0%,89%) 48%, hsl(248,9%,82%) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3e3e3', endColorstr='#cecdd5', GradientType=0 );
+.top{
+    background: #ffffff;
+    background: -moz-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #d1d0d8 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #ffffff), color-stop(47%, #f6f6f6), color-stop(100%, #d1d0d8));
+    background: -webkit-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #d1d0d8 100%);
+    background: -o-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #d1d0d8 100%);
+    background: -ms-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #d1d0d8 100%);
+    background: linear-gradient(to bottom, #ffffff 0%, #f6f6f6 47%, #d1d0d8 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d1d0d8', GradientType=0);
     width: 100%;
     height: 500px;
 }
 
-#top img{
-    width: 56%;
-    height: 56%;
-    margin-left: -42px;
-    margin-top: 68px;
+.arrow{
+    color: #25b9a3;
+    font-size: 80px;
+    position: absolute;
+    font-weight: 100;
+    margin-top: 207px;
 }
+.right{
+    margin-left: 1021px;
+}
+
+.image{
+    height: 430px;
+    width: 400px;
+    background-image: url(../images/black_chair.png);
+    background-size: cover;
+    background-position: center;
+    float: left;
+    margin-top: 64px;
+    margin-left: 57px;
+}
+
 .text{
-/*    float: right;*/
+    float: right;
     width: 425px;
     text-align: center;
-    position: absolute;
-    margin: -366px 0 0 488px;
+    margin-top: 133px;
+    margin-right: 150px;
 }
 
 h1{
@@ -153,7 +170,7 @@ h1{
 }
 
 .text a{
-    text-decoration: none;/*zrobi klase dla przycisków*/
+    text-decoration: none;/*zrobic klase dla przycisków*/
     font-size: 25px;
     background-color: #25b9a3;
     color: #fff;
@@ -162,7 +179,7 @@ h1{
     text-transform: uppercase;
 }
 
-#chairs{
+.chairs{
     height: 400px;
 }
 
@@ -192,23 +209,60 @@ h1{
 
 h3{
     font-weight: 700;  
-    padding-bottom: 29px;
+    padding-bottom: 21px;
 }
 
 h3:after{
     content: '';
-    height: 3px;
-    width: 200px;
-    background-color: #25b9a3;
+    width: 141px;
+    border-bottom: 7px solid #25b9a3;
+    display: block;
 }
 .box3{
     border: 1px solid #e3e3e3;
     margin: 30px 0 0 0;
     padding: 27px 0 0 20px;
+    height: 255px;
 }
 
 .box3 p{
     font-size: 14px;
-    padding-bottom: 7px;
+    padding-bottom: 14px;
     line-height: 22px;
 }
+
+h2{
+    font-size: 21px;
+    text-transform: uppercase;
+}
+
+.price{
+    height: 680px;
+    width: 100%;
+    background-color:#f1f1f1;
+}
+
+
+.form{
+    height: 560px;
+    width: 100%;
+}
+
+footer p{
+    font-size: 15px;
+    letter-spacing: 1.2px;
+    float: left;
+}
+
+.social-ico{
+    float: right;
+}
+
+.logo{
+     font-size: 20px;
+    float: right;
+}
+
+
+
+
