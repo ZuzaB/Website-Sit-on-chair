@@ -250,10 +250,17 @@ h2{
     height: 498px;
     width: 326px;
     text-align: center;
-    display: inline-block;
     margin-top: 92px;
     position: relative;
+    float: left;
 }
+
+
+#center{
+    margin: 92px 30px 0 30px;
+}
+
+
 
 .circle{
     position: absolute;
@@ -325,16 +332,19 @@ sup {
     color: #6f6f6f;
 }
 
-.price_list li:first-child{
+.price_list li:nth-child(2n+1){
     background-color: #e4e4e4;
-}
-
-.price_list li:last-child{
-    background-color: #f1f1f1;
 }
 
 .price_list ul{
     margin-bottom: 116px;
+}
+#center ul{
+    margin-bottom: 70px;
+}
+
+#right ul{
+    margin-bottom: 18px;
 }
 
 .price_list a{
