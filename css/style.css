@@ -50,10 +50,6 @@ body{
 .container{
     margin: 0px auto;
     max-width: 1064px;
-/*
-    border: 1px solid red;
-    padding: 
-*/
 }
 
 .row:after{
@@ -89,18 +85,28 @@ header ul li{
 .menue {
     position: absolute;
     background-color: #000;
+    top: 29px;
+    right: 337px;
 }
 
 .menue li{
-      display: none;
+    display: none;
+    padding: 8px 22px;
+    font-weight: 400;
 }
 
 header ul li:hover .menue li{
     display: block;
+  
+}
+/*poprawić*/
+nav li{
+    cursor: pointer;
 }
 
 .menue li:first-child{
     background-color: #fff;
+    padding: 0;
 }
 
 .triangle{
@@ -109,13 +115,14 @@ header ul li:hover .menue li{
     border-left: 12px solid transparent;
     border-right: 12px solid transparent;
     border-bottom: 10px solid #000;
-    margin: 0 auto;
-    
+    margin: 0 auto;  
 }
 
 span{
     color: #25b9a3;
 }
+
+
 
 .top{
     background: #ffffff;
@@ -257,8 +264,8 @@ h2{
     margin-top: 76px;
     position: relative;
     float: left;
+    background-color: #fff;
 }
-
 
 #center{
     margin: 76px 30px 0 30px;
@@ -306,6 +313,8 @@ h2{
     width: 130px;
     margin: 27px 0 31px 95px;
     padding-top: 36px;
+    background-color:#fff;
+    color: #c0c0c0;
  
 }
 
@@ -316,7 +325,7 @@ h2{
     padding: 0;
     font-size: 42px;
     font-weight: 700;
-    color: #c0c0c0;
+    
 }
 
 .price_list span{
@@ -340,10 +349,14 @@ sup {
 .price_list li:nth-child(2n+1){
     background-color: #e4e4e4;
 }
+.price_list li:nth-child(2n){
+    background-color:#f1f1f1;
+}
 
 .price_list ul{
     margin-bottom: 124px;
 }
+
 #center ul{
     margin-bottom: 76px;
 }
@@ -354,11 +367,46 @@ sup {
 
 .price_list a{
    text-decoration: none;
-   color: white;
+   color: #fff;
    background-color: #25b9a3;
    padding: 9px 31px;
    font-size: 15px;
    border-radius: 10px;
+}
+/*hover for price lists*/
+
+.price_list:hover{
+    border-color: #25b9a3;
+    background-color: #25b9a3; 
+}
+
+.price_list:hover h2{
+    color: #fff;
+}
+.price_list:hover p, .price_list:hover p>span{
+    color: #25b9a3;
+}
+.price_list:hover .inside{
+    border-color: #25b9a3;
+    background-color: #fff;
+}
+
+.price_list:hover .outside{
+    border-color: #25b9a3;
+    background-color: #25b9a3;
+}
+
+.price_list:hover a{
+    background-color: #fff;
+    color: #25b9a3;
+}
+
+.price_list:hover li:nth-child(2n+1){
+   background-color:#f1f1f1;
+}
+
+.price_list:hover li:nth-child(2n){
+    background-color: #e4e4e4;
 }
 
 .form{
@@ -419,26 +467,36 @@ textarea{
 .agree{
     width: 39%;
     float:right;
-    text-align: center;
     margin-top: 18px;
-    padding-left: 24px;
+    padding-left: 45px;
 }
 .agree img{
-    margin-bottom: 15px;
+    margin-bottom: 31px;
+    margin-left: 23px;
 }
 
-.agree span{
+.agree label{
     color: #c4c4c4; 
     font-size: 20px;
 }
 
 input[type=checkbox]{
-    height: 35px;
-    width: 35px;
+    display: none;
 }
 
-input[type=checkbox]:checked{
-    
+#check{
+    height: 49px;
+    width: 49px;
+    border: 1px solid #25b9a3;
+    float: left; 
+    margin-right: 10px;
+}
+
+input[type=checkbox]:checked~ #check{
+    background-image: url(../images/form_ok.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 input[type="submit"] {
