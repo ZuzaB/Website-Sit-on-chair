@@ -58,6 +58,10 @@ body{
     content: '';
 }
 
+.hidden{
+    display: none;
+}
+
 header{
     background-color: #000;
     color: #fff;
@@ -85,18 +89,23 @@ header ul li{
 .menue {
     position: absolute;
     background-color: #000;
+    margin-top: 1px;
+/*
     top: 29px;
     right: 337px;
+*/
 }
 
 .menue li{
-    display: none;
+    display: block;  /*none;*/
     padding: 8px 22px;
     font-weight: 400;
 }
 
+/* menue rozwijane z samym css
 header ul li:hover .menue li{
     display: block;
+*/
   
 }
 /*poprawić*/
@@ -143,7 +152,9 @@ span{
     position: absolute;
     font-weight: 100;
     margin-top: 207px;
+    cursor: pointer;
 }
+
 .right{
     margin-left: 1021px;
 }
@@ -160,11 +171,11 @@ span{
 }
 
 .text{
-    float: right;
+    float: left;
     width: 425px;
     text-align: center;
     margin-top: 133px;
-    margin-right: 150px;
+    margin-left: 33px;
 }
 
 h1{
