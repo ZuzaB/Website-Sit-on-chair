@@ -82,7 +82,7 @@ header ul{
 
 header ul li{
     display: inline-block;
-    padding: 0 8px 0 40px;
+    padding: 0 8px 7px 40px;
     font-weight: 700;
 }
 
@@ -90,10 +90,6 @@ header ul li{
     position: absolute;
     background-color: #000;
     margin-top: 1px;
-/*
-    top: 29px;
-    right: 337px;
-*/
 }
 
 .menue li{
@@ -162,12 +158,36 @@ span{
 .image{
     height: 430px;
     width: 400px;
+/*
     background-image: url(../images/black_chair.png);
     background-size: cover;
     background-position: center;
+*/
     float: left;
     margin-top: 64px;
     margin-left: 57px;
+}
+
+.slider div{
+   height: 430px;
+   width: 400px; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img1{
+    background-image: url(../images/black_chair.png);
+    background-size: cover;
+}
+
+.img2{
+    background-image: url(../images/orange.png);
+    background-size: contain; 
+}
+
+.img3{
+    background-image: url(../images/red_chair.png);
+    background-size: contain; 
 }
 
 .text{
