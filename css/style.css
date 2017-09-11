@@ -277,7 +277,7 @@ h2{
     width: 100%;
     background-color:#f1f1f1;
 }
-/*Stylowanie boxów z kółkami*/
+
 .price_list{
     border: 2px solid #d6d6d6;
     height: 500px;
@@ -292,8 +292,6 @@ h2{
 #center{
     margin: 76px 30px 0 30px;
 }
-
-
 
 .circle{
     position: absolute;
@@ -310,7 +308,6 @@ h2{
     z-index: 1;
     padding: 0px;
 }
-
 
 .outside{
     height: 53px;
@@ -550,6 +547,9 @@ footer p{
 }
 
 .logo{
-     font-size: 20px;
+    font-size: 20px;
     float: right;
+}
+.logo a{
+      color: #000;
 }
