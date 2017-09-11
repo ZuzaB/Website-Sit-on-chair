@@ -2,7 +2,6 @@
     box-sizing: border-box;
 }
 
-
 @font-face {
 	font-family: 'Raleway';
 	src: url('fonts/Raleway-Bold.eot');
@@ -47,6 +46,9 @@ body{
     font-family: 'Raleway', 'Arial', sans-serif;
 }
 
+a{
+  text-decoration: none;
+}
 .container{
     margin: 0px auto;
     max-width: 1064px;
@@ -70,9 +72,13 @@ header{
     height: 41px;
 }
 
-nav p{
-    padding: 12px 0;
-    float: left;
+nav a{
+    color: #fff;
+}
+
+nav > a{
+  padding: 12px 0;
+  float: left;
 }
 
 header ul{
@@ -84,29 +90,22 @@ header ul li{
     display: inline-block;
     padding: 0 8px 7px 40px;
     font-weight: 700;
+    cursor: pointer;
 }
-
+header ul li:first-child{
+  position: relative;
+}
 .menue {
     position: absolute;
     background-color: #000;
     margin-top: 1px;
+    left: 10%;
 }
 
 .menue li{
-    display: block;  /*none;*/
+    display: block;
     padding: 8px 22px;
     font-weight: 400;
-}
-
-/* menue rozwijane z samym css
-header ul li:hover .menue li{
-    display: block;
-*/
-  
-}
-/*poprawić*/
-nav li{
-    cursor: pointer;
 }
 
 .menue li:first-child{
@@ -120,14 +119,12 @@ nav li{
     border-left: 12px solid transparent;
     border-right: 12px solid transparent;
     border-bottom: 10px solid #000;
-    margin: 0 auto;  
+    margin: 0 auto;
 }
 
 span{
     color: #25b9a3;
 }
-
-
 
 .top{
     background: #ffffff;
@@ -158,11 +155,6 @@ span{
 .image{
     height: 430px;
     width: 400px;
-/*
-    background-image: url(../images/black_chair.png);
-    background-size: cover;
-    background-position: center;
-*/
     float: left;
     margin-top: 64px;
     margin-left: 57px;
@@ -170,7 +162,7 @@ span{
 
 .slider div{
    height: 430px;
-   width: 400px; 
+   width: 400px;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -182,12 +174,12 @@ span{
 
 .img2{
     background-image: url(../images/orange.png);
-    background-size: contain; 
+    background-size: contain;
 }
 
 .img3{
     background-image: url(../images/red_chair.png);
-    background-size: contain; 
+    background-size: contain;
 }
 
 .text{
@@ -211,7 +203,6 @@ h1{
 }
 
 .text a{
-    text-decoration: none;/*zrobic klase dla przycisków*/
     font-size: 25px;
     background-color: #25b9a3;
     color: #fff;
@@ -244,11 +235,11 @@ h1{
     background-color: #fff;
     background-color: rgba(255, 255, 255, .3);
     margin-top: 150px;
-    padding: 11px 0px 0px 12px; 
+    padding: 11px 0px 0px 12px;
 }
 
 h3{
-    font-weight: 700;  
+    font-weight: 700;
     padding-bottom: 21px;
 }
 
@@ -300,7 +291,7 @@ h2{
 
 #center{
     margin: 76px 30px 0 30px;
-} 
+}
 
 
 
@@ -337,7 +328,7 @@ h2{
     border-bottom: 0 solid transparent;
 }
 
-.price_circle{ 
+.price_circle{
     border: 2px solid #d6d6d6;
     border-radius: 50%;
     height: 130px;
@@ -346,7 +337,7 @@ h2{
     padding-top: 36px;
     background-color:#fff;
     color: #c0c0c0;
- 
+
 }
 
 .price_list p{
@@ -356,7 +347,7 @@ h2{
     padding: 0;
     font-size: 42px;
     font-weight: 700;
-    
+
 }
 
 .price_list span{
@@ -397,18 +388,16 @@ sup {
 }
 
 .price_list a{
-   text-decoration: none;
    color: #fff;
    background-color: #25b9a3;
    padding: 9px 31px;
    font-size: 15px;
    border-radius: 10px;
 }
-/*hover for price lists*/
 
 .price_list:hover{
     border-color: #25b9a3;
-    background-color: #25b9a3; 
+    background-color: #25b9a3;
 }
 
 .price_list:hover h2{
@@ -507,7 +496,7 @@ textarea{
 }
 
 .agree label{
-    color: #c4c4c4; 
+    color: #c4c4c4;
     font-size: 20px;
 }
 
@@ -519,7 +508,7 @@ input[type=checkbox]{
     height: 49px;
     width: 49px;
     border: 1px solid #25b9a3;
-    float: left; 
+    float: left;
     margin-right: 10px;
 }
 
@@ -548,7 +537,7 @@ footer{
 }
 
 footer p{
-    padding: 24px 9px 0 0; 
+    padding: 24px 9px 0 0;
     font-size: 15px;
     letter-spacing: 1.2px;
     float: left;
@@ -564,7 +553,3 @@ footer p{
      font-size: 20px;
     float: right;
 }
-
-
-
-
