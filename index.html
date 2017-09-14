@@ -2,168 +2,242 @@
 <html lang="pl-PL">
 
 <head>
-    <meta charset="UTF-8">
-    <title>SIT ON CHAIR</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>SIT ON CHAIR</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <html>
 
 <body>
-    <header>
-        <nav class="container row">
-            <a href="index.html">
+  <header class="menue-main">
+    <nav class="container row">
+      <a href="index.html">
                 SIT <span><strong>ON</strong></span> CHAIR
             </a>
-            <ul>
-                <li>O FIRMIE
-                    <ul class="menue hidden">
-                        <li>
-                            <div class="triangle"></div>
-                        </li>
-                        <li><a href="#">Aktualności</a></li>
-                        <li><a href="#">Nasz team</a></li>
-                        <li><a href="#">Historia</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">GALERIA</a></li>
-                <li><a href="#">KONTAKT</a></li>
+      <ul>
+        <li>O FIRMIE
+          <ul class="menue hidden">
+            <li>
+              <div class="triangle"></div>
+            </li>
+            <li><a href="#">Aktualności</a></li>
+            <li><a href="#">Nasz team</a></li>
+            <li><a href="#">Historia</a></li>
+          </ul>
+        </li>
+        <li><a href="#">GALERIA</a></li>
+        <li><a href="#">KONTAKT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="top">
+    <div class="container row">
+      <div class="arrow right">&gt;</div>
+      <div class="arrow left">&lt;</div>
+      <div class="image">
+        <ul class="slider">
+          <li class="hidden">
+            <div class="img1"></div>
+          </li>
+          <li class="hidden">
+            <div class="img2"></div>
+          </li>
+          <li class="hidden">
+            <div class="img3"></div>
+          </li>
+        </ul>
+      </div>
+      <div class="text">
+        <h1>sit <span><strong>on</strong></span> our <span><strong>chair</strong></span></h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu nisl rutrum, posuere nulla a, molestie ex. Vestibulum vehicula pellentesque sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+        <a href="#">zobacz więcej</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="chairs">
+    <div class="container row">
+      <div class="products box1">
+        <div>
+          <h3>Chair CLAIR</h3>
+        </div>
+      </div>
+      <div class="products box2">
+        <div>
+          <h3>Chair MARGARITA</h3>
+        </div>
+      </div>
+      <div class="products box3">
+        <h3>Finds all inputs</h3>
+        <p>
+          Finds all inputs that are not checked and highlights the next sibling span. Notice there is no change when clicking the checkboxes since no click events have been linked.
+        </p>
+        <p>
+          Notice there is no change when clicking the checkboxes since no click events have been
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="price">
+    <div class="container row">
+      <h2>cennik</h2>
+      <div class="price_list">
+        <div class="circle inside"></div>
+        <div class="circle outside"></div>
+        <h2>BASIC PLAN</h2>
+        <div class="price_circle">
+          <p>85<sup>99</sup><br>
+            <span>PLN/MSC</span></p>
+        </div>
+        <ul>
+          <li>Zakup towaru + dowóz</li>
+          <li>Serwis</li>
+        </ul>
+        <a class="button" href='#'>DOŁĄCZ</a>
+      </div>
+      <div class="price_list center">
+        <div class="circle inside"></div>
+        <div class="circle outside"></div>
+        <h2>STANDARD PLAN</h2>
+        <div class="price_circle">
+          <p>95<sup>99</sup><br>
+            <span>PLN/MSC</span></p>
+        </div>
+        <ul>
+          <li>Zakup towaru + dowóz</li>
+          <li>Serwis</li>
+          <li>Gwarancja 5 lat</li>
+        </ul>
+        <a class="button" href='#'>DOŁĄCZ</a>
+      </div>
+      <div class="price_list" id="right">
+        <div class="circle inside"></div>
+        <div class="circle outside"></div>
+        <h2>ADVANCE PLAN</h2>
+        <div class="price_circle">
+          <p>211<sup>00</sup><br>
+            <span>PLN/MSC</span></p>
+        </div>
+        <ul>
+          <li>Zakup towaru + dowóz</li>
+          <li>Serwis</li>
+          <li>Gwarancja 6 lat</li>
+          <li>Porady projektanta</li>
+        </ul>
+        <a class="button" href='#'>DOŁĄCZ</a>
+      </div>
+    </div>
+  </section>
+
+  <section class='form'>
+    <div class="container row">
+      <h2>kontakt</h2>
+      <form>
+        <p><input type="text" name="name" placeholder="Imię"></p>
+        <p><input type="email" name="email" placeholder="email"></p>
+        <p><textarea name="message" placeholder="Wiadomość"></textarea></p>
+      </form>
+      <div class="agree">
+        <img src="images/red_chair.png" alt="czerwone krzesło" title="czerwone krzesło"><br>
+        <input type="checkbox" name="permission" id="permis" checked>
+        <div id="check"></div>
+        <label for="permis">Zgadzam się na przetwarzanie danych osobowych</label>
+        <input type="submit" value="WYŚLIJ">
+      </div>
+    </div>
+  </section>
+  <section class="application ">
+    <div class="main_width container row">
+      <section class="choice_part inline">
+        <header>
+          <h3>SKOMPONUJ SWOJE KRZESŁO</h3>
+          <span class="green_bell"></span>
+        </header>
+
+        <div class="form">
+          <div class="drop_down_list">
+            <span class="list_label">Wybierz rodzaj</span>
+            <span class="list_arrow"></span>
+            <ul class="list_panel">
+              <li>Clair</li>
+              <li>Margarita</li>
+              <li>Selena</li>
             </ul>
-        </nav>
-    </header>
+          </div>
+          <div class="drop_down_list">
+            <span class="list_label">Wybierz kolor</span>
+            <span class="list_arrow"></span>
+            <ul class="list_panel">
+              <li>Czerwony</li>
+              <li>Czarny</li>
+              <li>Pomarańczowy</li>
+            </ul>
+          </div>
+          <div class="drop_down_list">
+            <span class="list_label">Wybierz materiał</span>
+            <span class="list_arrow"></span>
+            <ul class="list_panel">
+              <li>Tkanina</li>
+              <li>Skóra</li>
+            </ul>
+          </div>
+          <div class="checkbox check-box">
+            <input type="checkbox" id="transport" data-transport-price="200">
+            <label for="transport">Transport</label>
+          </div>
+          <!--<div class="checkbox"></div>-->
+          <!--<span class="list_label inline_text">Transport</span>-->
+        </div>
+      </section>
 
-    <section class="top">
-        <div class="container row">
-            <div class="arrow right">&gt;</div>
-            <div class="arrow left">&lt;</div>
-            <div class="image">
-                <ul class="slider">
-                    <li class="hidden">
-                        <div class="img1"></div>
-                    </li>
-                    <li class="hidden">
-                        <div class="img2"></div>
-                    </li>
-                    <li class="hidden">
-                        <div class="img3"></div>
-                    </li>
-                </ul>
-            </div>
-            <div class="text">
-                <h1>sit <span><strong>on</strong></span> our <span><strong>chair</strong></span></h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu nisl rutrum, posuere nulla a, molestie ex. Vestibulum vehicula pellentesque sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-                <a href="#">zobacz więcej</a>
-            </div>
-        </div>
-    </section>
+      <section class="image_part inline">
+        <img src="images/red_chair.png">
+      </section>
 
-    <section class="chairs">
-        <div class="container row">
-            <div class="products box1">
-                <div>
-                    <h3>Chair CLAIR</h3>
-                </div>
-            </div>
-            <div class="products box2">
-                <div>
-                    <h3>Chair MARGARITA</h3>
-                </div>
-            </div>
-            <div class="products box3">
-                <h3>Finds all inputs</h3>
-                <p>
-                    Finds all inputs that are not checked and highlights the next sibling span. Notice there is no change when clicking the checkboxes since no click events have been linked.
-                </p>
-                <p>
-                    Notice there is no change when clicking the checkboxes since no click events have been
-                </p>
-            </div>
+      <section class="summary_part inline">
+        <header class="align_right">
+          <h3>PODSUMOWANIE</h3>
+          <span class="green_bell"></span>
+        </header>
+        <div class="summary_panel">
+          <div class="panel_left">
+            <h4 class="title">Twój fotel</h4>
+            <span class="color"></span>
+            <span class="pattern"></span>
+            <span class="transport"></span>
+          </div>
+          <div class="panel_right">
+            <h4 class="title value"></h4>
+            <span class="color value"></span>
+            <span class="pattern value"></span>
+            <span class="transport value"></span>
+          </div>
+          <div class="sum_label">SUMA</div>
+          <div class="sum"><strong></strong></div>
         </div>
-    </section>
-    <section class="price">
-        <div class="container row">
-            <h2>cennik</h2>
-            <div class="price_list">
-                <div class="circle inside"></div>
-                <div class="circle outside"></div>
-                <h2>BASIC PLAN</h2>
-                <div class="price_circle">
-                    <p>85<sup>99</sup><br>
-                        <span>PLN/MSC</span></p>
-                </div>
-                <ul>
-                    <li>Zakup towaru + dowóz</li>
-                    <li>Serwis</li>
-                </ul>
-                <a class="button" href='#'>DOŁĄCZ</a>
-            </div>
-            <div class="price_list" id="center">
-                <div class="circle inside"></div>
-                <div class="circle outside"></div>
-                <h2>STANDARD PLAN</h2>
-                <div class="price_circle">
-                    <p>95<sup>99</sup><br>
-                        <span>PLN/MSC</span></p>
-                </div>
-                <ul>
-                    <li>Zakup towaru + dowóz</li>
-                    <li>Serwis</li>
-                    <li>Gwarancja 5 lat</li>
-                </ul>
-                <a class="button" href='#'>DOŁĄCZ</a>
-            </div>
-            <div class="price_list" id="right">
-                <div class="circle inside"></div>
-                <div class="circle outside"></div>
-                <h2>ADVANCE PLAN</h2>
-                <div class="price_circle">
-                    <p>211<sup>00</sup><br>
-                        <span>PLN/MSC</span></p>
-                </div>
-                <ul>
-                    <li>Zakup towaru + dowóz</li>
-                    <li>Serwis</li>
-                    <li>Gwarancja 6 lat</li>
-                    <li>Porady projektanta</li>
-                </ul>
-                <a class="button" href='#'>DOŁĄCZ</a>
-            </div>
-        </div>
-    </section>
-    <section class='form'>
-        <div class="container row">
-            <h2>kontakt</h2>
-            <form>
-                <p><input type="text" name="name" placeholder="Imię"></p>
-                <p><input type="email" name="email" placeholder="email"></p>
-                <p><textarea name="message" placeholder="Wiadomość"></textarea></p>
-            </form>
-            <div class="agree">
-                <img src="images/red_chair.png" alt="czerwone krzesło" title="czerwone krzesło"><br>
-                <input type="checkbox" name="permission" id="permis" checked>
-                <div id="check"></div>
-                <label for="permis">Zgadzam się na przetwarzanie danych osobowych</label>
-                <input type="submit" value="WYŚLIJ">
-            </div>
-        </div>
-    </section>
-    <footer>
-        <div class="container row">
-            <p>
-                Copyright 2014 &#124; All Rights Reserved. &#45; Sit On Chair
-            </p>
-            <p class="logo"><a href="index.html">SIT <strong>ON</strong> CHAIR</a></p>
-            <div class="social-ico">
-                <a href="#"><img src="images/flickr.png" alt="logo flickr" title="flickr"></a>
-                <a href="#"><img src="images/vimeo.png" alt="logo vimeo" title="vimeo"></a>
-                <a href="#"><img src="images/pinterest.png" alt="logo pinterest" title="pinterest"></a>
-                <a href="#"><img src="images/twitter.png" alt="logo twitter" title="twitter"></a>
-            </div>
-        </div>
-    </footer>
-    <script src="js/app.js" type="text/javascript"></script>
+        <a href="" class="green_button">Zamawiam</a>
+      </section>
+    </div>
+  </section>
+  <footer>
+    <div class="container row">
+      <p>
+        Copyright 2014 &#124; All Rights Reserved. &#45; Sit On Chair
+      </p>
+      <p class="logo"><a href="index.html">SIT <strong>ON</strong> CHAIR</a></p>
+      <div class="social-ico">
+        <a href="#"><img src="images/flickr.png" alt="logo flickr" title="flickr"></a>
+        <a href="#"><img src="images/vimeo.png" alt="logo vimeo" title="vimeo"></a>
+        <a href="#"><img src="images/pinterest.png" alt="logo pinterest" title="pinterest"></a>
+        <a href="#"><img src="images/twitter.png" alt="logo twitter" title="twitter"></a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/app.js" type="text/javascript"></script>
 </body>
 
 </html>
