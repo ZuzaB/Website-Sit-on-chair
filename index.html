@@ -27,7 +27,7 @@
           </ul>
         </li>
         <li><a href="#">GALERIA</a></li>
-        <li><a href="#">KONTAKT</a></li>
+        <li><a href="#contact">KONTAKT</a></li>
       </ul>
     </nav>
   </header>
@@ -132,24 +132,6 @@
       </div>
     </div>
   </section>
-
-  <section class='form'>
-    <div class="container row">
-      <h2>kontakt</h2>
-      <form>
-        <p><input type="text" name="name" placeholder="Imię"></p>
-        <p><input type="email" name="email" placeholder="email"></p>
-        <p><textarea name="message" placeholder="Wiadomość"></textarea></p>
-      </form>
-      <div class="agree">
-        <img src="images/red_chair.png" alt="czerwone krzesło" title="czerwone krzesło"><br>
-        <input type="checkbox" name="permission" id="permis" checked>
-        <div id="check"></div>
-        <label for="permis">Zgadzam się na przetwarzanie danych osobowych</label>
-        <input type="submit" value="WYŚLIJ">
-      </div>
-    </div>
-  </section>
   <section class="application ">
     <div class="main_width container row">
       <section class="choice_part inline">
@@ -157,7 +139,6 @@
           <h3>SKOMPONUJ SWOJE KRZESŁO</h3>
           <span class="green_bell"></span>
         </header>
-
         <div class="form">
           <div class="drop_down_list">
             <span class="list_label">Wybierz rodzaj</span>
@@ -189,15 +170,10 @@
             <input type="checkbox" id="transport" data-transport-price="200">
             <label for="transport">Transport</label>
           </div>
-          <!--<div class="checkbox"></div>-->
-          <!--<span class="list_label inline_text">Transport</span>-->
-        </div>
       </section>
-
       <section class="image_part inline">
         <img src="images/red_chair.png">
       </section>
-
       <section class="summary_part inline">
         <header class="align_right">
           <h3>PODSUMOWANIE</h3>
@@ -221,6 +197,24 @@
         </div>
         <a href="" class="green_button">Zamawiam</a>
       </section>
+    </div>
+  </section>
+  <section class='contact' id="contact">
+    <div class="container row">
+      <h2>kontakt</h2>
+      <form>
+        <p><input type="text" name="name" placeholder="Imię"></p>
+        <p><input type="email" name="email" placeholder="email"></p>
+        <p><textarea name="message" placeholder="Wiadomość"></textarea></p>
+      </form>
+      <div class="agree">
+        <img src="images/red_chair.png" alt="czerwone krzesło" title="czerwone krzesło"><br>
+        <div class="checkbox">
+          <input type="checkbox" name="permission" id="permis" checked>
+          <label for="permis">Zgadzam się na przetwarzanie danych osobowych</label>
+        </div>
+        <input type="submit" value="WYŚLIJ">
+      </div>
     </div>
   </section>
   <footer>
