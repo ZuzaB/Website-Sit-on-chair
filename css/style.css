@@ -659,7 +659,7 @@ sup {
   z-index: 2;
   position: absolute;
   top: 54px;
-  display:none;
+  /*display:none;*/
 }
 
 .list_panel li {
