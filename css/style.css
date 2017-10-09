@@ -668,6 +668,10 @@ sup {
   color: #585858;
 }
 
+.list_panel li:hover{
+  font-weight: bold;
+}
+
 .title {
   height: 30px;
   font-weight: bolder;
