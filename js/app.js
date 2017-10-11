@@ -83,7 +83,11 @@ document.addEventListener('DOMContentLoaded', function(){
     var sum = document.getElementsByClassName('sum');
     var sumTotal = sum[0].querySelector('strong');
     var transportLabel = transportCheck.nextElementSibling;
-    var totalPrice = 0;
+
+    function totalPrice (){
+      var sumPrice = parseInt( 0 + productTitle[1].innerText) + parseInt(0 + productColor[1].innerText * 1) + parseInt(0 + productPattern[1].innerText) + parseInt(0 + productTransport[1].innerText);
+      sumTotal.innerText = sumPrice;
+    }
 
     transportLabel.addEventListener('click', function(){
        var checkTransport = transportCheck.checked;
@@ -91,13 +95,11 @@ document.addEventListener('DOMContentLoaded', function(){
         if ( checkTransport === false ) {
           productTransport[0].innerText = 'Transport';
           productTransport[1].innerText = priceTransport;
-          totalPrice+=priceTransport;
         }else {
           productTransport[0].innerText = '';
           productTransport[1].innerText = '';
-          totalPrice-=priceTransport;
         }
-        sumTotal.innerText = totalPrice;
+        totalPrice();
     });
 
     for (var i = 0; i < listArrows.length; i++) {
@@ -131,9 +133,7 @@ document.addEventListener('DOMContentLoaded', function(){
              }
              listLabel.innerText = productInfo;
              listLabel.style.color = '#575757';
-//poprawić sumę
-             totalPrice += productPrice;
-             sumTotal.innerText = totalPrice;
+             totalPrice();
            });
          }
       });
