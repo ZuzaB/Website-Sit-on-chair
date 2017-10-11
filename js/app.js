@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function(){
     //znikające opisy
     var products = document.querySelectorAll('.products');
 
-   for(var i = 0; i < products.length; i++) {
+   for (var i = 0; i < products.length; i++) {
        products[i].addEventListener('mouseover', function(){
 
             var div = this.querySelector('div');
@@ -81,9 +81,27 @@ document.addEventListener('DOMContentLoaded', function(){
     var productPattern = document.getElementsByClassName('pattern');
     var productTransport = document.getElementsByClassName('transport');
     var sum = document.getElementsByClassName('sum');
+    var sumTotal = sum[0].querySelector('strong');
+    var transportLabel = transportCheck.nextElementSibling;
+    var totalPrice = 0;
+
+    transportLabel.addEventListener('click', function(){
+       var checkTransport = transportCheck.checked;
+       var priceTransport = parseInt(transportCheck.dataset.transportPrice);
+        if ( checkTransport === false ) {
+          productTransport[0].innerText = 'Transport';
+          productTransport[1].innerText = priceTransport;
+          totalPrice+=priceTransport;
+        }else {
+          productTransport[0].innerText = '';
+          productTransport[1].innerText = '';
+          totalPrice-=priceTransport;
+        }
+        sumTotal.innerText = totalPrice;
+    });
 
     for (var i = 0; i < listArrows.length; i++) {
-       listArrows[i].addEventListener('click', function(){
+       listArrows[i].addEventListener('click', function (){
          var listPanel = this.nextElementSibling;
          listPanel.classList.toggle('hidden');
 
@@ -94,7 +112,7 @@ document.addEventListener('DOMContentLoaded', function(){
          for (var i = 0; i< listItems.length; i++) {
            listItems[i].addEventListener('click', function(){
              var productInfo = this.innerText;
-             var productPrice = this.dataset.price;
+             var productPrice = parseInt(this.dataset.price);
 
              switch (listText) {
                case 'Wybierz rodzaj':
@@ -113,20 +131,11 @@ document.addEventListener('DOMContentLoaded', function(){
              }
              listLabel.innerText = productInfo;
              listLabel.style.color = '#575757';
-//zrobić sumę
-             var totalPrice = parseInt(productTitle[1].innerText) + parseInt(productColor[1].innerText) + parseInt(productPattern[1].innerText) + parseInt(productTransport[1].innerText);
-             sum.innerText = totalPrice;
-             console.log(typeof totalPrice);
+//poprawić sumę
+             totalPrice += productPrice;
+             sumTotal.innerText = totalPrice;
            });
          }
       });
     }
-    //zmienić na event na labelu
-        if ( transportCheck.checked = true ){
-          productTransport[0].innerText = 'Transport';
-          productTransport[1].innerText = transportCheck.dataset.transportPrice;
-        }else {
-          productTransport[0].innerText = '';
-          productTransport[1].innerText = '';
-        }
 });
