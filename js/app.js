@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
     transportLabel.addEventListener('click', function(){
        var checkTransport = transportCheck.checked;
-       var priceTransport = parseInt(transportCheck.dataset.transportPrice);
+       var priceTransport = transportCheck.dataset.transportPrice;
         if ( checkTransport === false ) {
           productTransport[0].innerText = 'Transport';
           productTransport[1].innerText = priceTransport;
@@ -104,6 +104,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
     for (var i = 0; i < listArrows.length; i++) {
        listArrows[i].addEventListener('click', function (){
+         this.classList.toggle('list_fold');
          var listPanel = this.nextElementSibling;
          listPanel.classList.toggle('hidden');
 
@@ -114,7 +115,7 @@ document.addEventListener('DOMContentLoaded', function(){
          for (var i = 0; i< listItems.length; i++) {
            listItems[i].addEventListener('click', function(){
              var productInfo = this.innerText;
-             var productPrice = parseInt(this.dataset.price);
+             var productPrice = this.dataset.price;
 
              switch (listText) {
                case 'Wybierz rodzaj':
