@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
     function totalPrice (){
       var sumPrice = parseInt( 0 + productTitle[1].innerText) + parseInt(0 + productColor[1].innerText * 1) + parseInt(0 + productPattern[1].innerText) + parseInt(0 + productTransport[1].innerText);
-      sumTotal.innerText = sumPrice;
+      sumTotal.innerText = sumPrice + ' zł';
     }
 
     transportLabel.addEventListener('click', function(){
@@ -105,6 +105,7 @@ document.addEventListener('DOMContentLoaded', function(){
     for (var i = 0; i < listArrows.length; i++) {
        listArrows[i].addEventListener('click', function (){
          this.classList.toggle('list_fold');
+
          var listPanel = this.nextElementSibling;
          listPanel.classList.toggle('hidden');
 
@@ -123,13 +124,13 @@ document.addEventListener('DOMContentLoaded', function(){
                  productTitle[1].innerText = productPrice;
                  break;
                case 'Wybierz kolor':
-                   productColor[0].innerText = productInfo;
-                   productColor[1].innerText = productPrice;
-                   break;
+                 productColor[0].innerText = productInfo;
+                 productColor[1].innerText = productPrice;
+                 break;
                case 'Wybierz materiał':
-                     productPattern[0].innerText = productInfo;
-                     productPattern[1].innerText = productPrice;
-                     break;
+                 productPattern[0].innerText = productInfo;
+                 productPattern[1].innerText = productPrice;
+                 break;
                default:
              }
              listLabel.innerText = productInfo;
